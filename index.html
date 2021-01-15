@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <img src= Imagen/TecNM_logo.png style="float: left;" />
+    <img src="Imagen/tec.jpg" style="float: right; width: 130px; height: 130 px;"/> 
+    <br><br><br><br><br><br>
+    <title> Proyecto de Arquitectura de computadoras </title>
+    <meta name="author" content = "Angel Eduardo Rios Aguirre"/>
+    <meta name="keywords" content = "Instituto Tecnologico de Saltillo, Arquitectura de computadoras"> 
+    <link rel="stylesheet" href="estilo.css">  
+</head>
+<body>
+    <header>
+        <h1>Arquitectura de Computadoras</h1>
+    </header>
+    <br>
+    <aside id="indice">
+        <h2><a style="text-align: center;"> Indice</a></h2>
+        <ul>
+            <li> <a href="#Introducción"> Introduccion</a><br><br></li>  
+            <li><a href="#ConceptosBasicos"> Conceptos Basicos de la Arquitetura de Computadoras </a><br><br></li>
+            <li><a href="#AvancesArqui"> Avances de la Arquitectura de Computadoras</a><br><br></li>
+            <li><a href="#ArquiMultiproceso"> Arquitectura de Multiprocesamiento</a><br><br></li> 
+            <li><a href="#ArquitecturasSC"> Arquitecturas CISC & RISC</a><br><br></li> 
+            <li><a href="#UnidadCentral"> Unidad Central de Procesamiento</a><br><br></li>
+            <li><a href="#UnidadAritmetica"> Unidad Aritmetica-Logica</a><br><br></li>
+            <li><a href="#UnidadControl"> Unidad de Contrl</a><br><br></li> 
+            <li><a href="#registros"> Registros de Procesador</a><br><br></li>
+            <li><a href="#memoria"> Memoria</a><br><br></li>
+            <li><a href="#Unidad2"> Unidad 2 Intel</a><br><br></li> 
+            <li><a href="#Unidad3"> Unidad 3 AMD</a><br><br></li>
+            <li><a href="#Unidad4"> Unidad 4 Procedimiento Paralelo</a><br><br></li>
+        </ul>
+    </aside>
+    <section>
+        <article id="Introducción">
+            <h3>Unidad 1 Introduccion a la Arquitectura de Computadoras</h3>
+            <h2>Introduccion</h2>
+            <p>
+                A continuación en esta pagina se mostrará algunos temas vistos en lo que viene siendo la 
+                materia de Arquitectura de Computadoras de la carrera de
+                Sistemas Computacionales del Instituto Tecnologico de Saltillo, el motivo de esta pagina
+                es meramente academico, por lo cual todo lo investigado
+                esta basado en otras paginas y fuentes de información (las cuales se deja el link de las mismas al final
+                de la pagina) siendo el proposito de esta pagina
+                un resumen un tanto general de ciertos temas de la materia como lo son conceptos generales, los 
+                avances de las computadoras desde la creacion de
+                estas hasta la actualidad, la explicacion de ciertos componentes y clasificaciones
+                de dichos componentes, la historia de Intel y AMD, etc. (la unidad 1 al ser simplemente un video 
+                opte por escribir el resumen del video hecho, además de poner el link del video al final del texto,
+                mientras que las demás unidad se puede apreciar las deapositivas que muestran 
+                el resumen de la unidad) 
+            </p>
+        </article>
+        <article id="ConceptosBasicos">
+            <h2>Conceptos basicos de la Arquitectura de Computadora</h2>
+            <p>
+                Primero tenemos que entender un concepto muy basico empezando por saber <em>¿que es una computadora o 
+                computador? </em> esta pregunta se puede
+                <br>
+                responder diciendo que son todos los elementos que conforma a lo que conocemos como <strong><em>computadora</em></strong>
+                desde el <strong><em>hardware</em></strong> (todo componente fisico
+                <br>
+                sea se: monitor, teclado, targeta madre, mouse, etc); hasta el <strong><em>software</em></strong> (todas las aplicaciones
+                y sistemas operativos que necesita una computadora).
+                <br>
+                Ahora bien <em>¿que es la <strong>Arquitectura de Computadoras</strong>?</em> viendo la desde el punto de vista de un progamador
+                es la relacion con el funcionamiento
+                <br>
+                de un sistema incluyendo aspectos como el tamaño de diferentes datos y los tipos de operaciones que se pueden realizar, por su parte
+                la 
+                <br>
+                <em><strong>Estructura de Computadoras</strong></em> se refiere a la organización de los elementos que son visibles para el 
+                programador, como las interfaces
+                <br>
+                hacia los dispositivos periféricos, la frecuencia de reloj y la tecnología utilizada en las memorias, entre otros 
+                elementos.    
+                <br> 
+                Además en la Arquitectura de Computadoras existen <em><strong>Niveles de Arquitectura de Computadoras</strong></em>, dos principalmente:
+                <br>
+                <dt><strong>El Nivel Superior</strong></dt>
+                <dd>Donde los usuarios ejecutan programas a traves de la computadora y</dd><br>
+                <dt><strong>El Nivel Inferior</strong></dt>
+                <dd>El cual consiste principalmente por transitores y cables.</dd>
+            </p>
+        </article>
+        <article id="AvancesArqui">
+            <h2>Avances de la Arquitectura de Computadoras</h2>    
+            <p id="Ppascal1">
+                <img class="pascal1" src="Imagen/pascal.jpg" title="Maquina Mecanica de Blaise Pascual"> Pues bien, se puede decir que el inicio de la Arquitectura de Computadoras se dió en 1800 con la creación de, si bien no fue la primera computadora, la primera calculadora mecanica sumadora;
+                está calculadora también conocida como la <strong>pascalina o máquina de aritmética</strong> , fue la primera calculadora producida con una interfaz a base de ruedas giratorias y con la unica función de hacer sumas y restas,
+                creada por Blaise Pascual quién era un matemático y filósofo francés quién después 3 años de desarrollo logro hacer la calculadora con el fin de ayudar a su padre el cual era un recolector de impuestos.
+                Con el trascurso de los años Pascal produjo 50 máquinas idénticas con el fin de distribuirlas a diversas personas en Europa siendo considerada la primera máquina para satisfacer un fin comercial (sin contar 
+                el ábaco creado por los griegos).<br>     
+            </p>
+            <p>
+                <img class="babbege1" src="Imagen/babbage.jpg" title="Maquina Analítica de Charles Babbege"> Charles Babbege construyó una máquina que podia ser programable para hacer cualquier tipo de cálculo más allá de las tablas logarítmicas o funciones polinómicas, creando a sí la primera 
+                <strong>máquina analítica</strong> 
+                la cual tenia dispositivos de entrada basados en tarjetas perforadas de Jacquard, un procesador aritmético, una unidad de control que determinaba qué tarea debía realizar, un mecanismo de salida y una memoria donde 
+                los números podían ser almacenados hasta ser procesados.<br>
+                Todo esto, logró que consideren a la máquina analítica de Babbage como la primera computadora del mundo.
+            </p> 
+            <p>
+                <img class="enigma1" src="Imagen/ENIGMA.jpg" title="Maquina Analítica ENIGMA de Arthur Scherbius ">En los años de la segunda guerra mundial un ingeniero alemán llamado Arthur Scherbius, un experto en electromecánica, diseñó con ayuda de una compañia llamada Enigma Chiffiermaschinen 
+                AG en Berlin lo que hoy conocemos
+                como la <strong>Máquina Analítica ENIGMA</strong> la cual era un dispositivo electromecánico, que consistía en una serie de teclas, al igual que una máquina de escribir, cuyo uso principal fue dando por el ejercito
+                Aleman como vía para compartir información confidencial pues la máquina contaba con un avanzado sistema de encriptación de datos, ademas de que podía leer datos de entrada, producir datos de salida, tenia un 
+                control automático de las operaciones que la máquina realizaba y contaba con un espacio de almacenamiento de datos.
+                
+            </p> 
+            <p>
+                <img class="colossus1" src="Imagen/colossus.jpg" title="Maquina COLOSSUS de Tommy Flowers"> Sin embargo la Máquina ENIGMA no fue la unica diseñada en la Segunda Guerra Mundial, Tommy Flowers fue un ingeniero británico quien diseño la <strong>Máquina Colossus</strong> empleada para 
+                leer las comunicaciones cifradas alemanas 
+                durante la Segunda Guerra Mundial, permitiendo conocer detalles sobre movimientos de tropas, el estado de los suministros, municiones, el núemro de soldados muertos, entre otras cosas.<br>
+                Basando se en la idea de universalidad de la máquina de Turing, estaba compues por más de 1.500 tubos de vacío, usaba tarjetas pergoradas para la entrada de datos y los resultados se almacenaban en relés temporalmente hasta que 
+                se les daba salida a través de una máquina de escribir; siendototalmente automática, medía 2.25 metros de alto y 3 metros de largo por 1.20 de ancho.
+            </p> 
+            <p>
+                <img class="eniac1" src="Imagen/eniac.jpg" title="Maquina ENIAC de Presper Eckert y John Mauchly"> Por parte de Estados Unidos, también desarrollaron máquinas para utilizar durante la Segunda Guerra Mundial, una de ellas 
+                fue la <strong>Máquina ENIAC</strong> (Electronic Numerial Integrator And Computer), esta fue un ordenador electrónico digital con fines generales a gran escala, siendo la máquina más grande del mundo (en esa época), desarrollada por 
+                Presper Eckert y John Mauchly quienes diseñaron el Hardware compuesto por 17468 tubos de vacío y con innovaciones técnicas como que combinaba diversos componentes técnicos en un único sistema que era capaz de realizar 5000 sumas y 300 
+                multiplicaciones por segundo desarrollado por un grupo de informáticas. La función principal de esta máquina era resolver problemas de balística del ejército de Estados Unidos lo que hizo que esta máquina brillara más en el ámbito científico 
+                que en el militar.
+            </p>
+            <p>
+                <img class="edvac1" src="Imagen/edvac.jpg" title="Maquina EDVAC de Presper Eckert y John Mauchly"> Además de la máquina ENIAC, Presper Eckert y John Mauchly habían creado previmente la <strong>Máquina EDVAC</strong>(Electronic Discrete Variable Automatic Computer),
+                la cual fue una de las primeras computadoras electrónicas que, a diferencia de ENIAC, no era decimal, sino binaria el cual tuvo el primer programa diseñado para ser almacenado.<br>
+                El objetico de esta máquina era almacenar las intrucciones que trabajarían con los datos introduciods en una memoria aparte, además de eso esta computadora ejecutaba las intrucciones de operaciones básicas, sin embargo terminosiendo de soporte
+                para resolver y encontrar problemas de la máquina ENIAC.
+            </p>
+            <p>
+                <img class="edsac1" src="Imagen/reconstruccion-de-edsac.jpg" title="Maquina EDSAC por Maurice Wilkes y sus colegas del Laboratorio de Matemáticas de Cambridge"> Para el año de 1949 cientificos del Laboratorio de Matemáticas de la Universidad de Cambridge diseñaron 
+                la <strong>Máquina EDSAC</strong>(Electronic Delay Storage Automatic Computer) la cual se volvió el primer sistema de programa almacenado electrónicamente del mundo. La máquina contaba con pantallas de tubo de rayos catódicos para mostrar las operaciones electrónicas 
+                del hardware con propósitos de diagnóstico, así como tanque para las líneas de retraso de mercurio para el almacenamiento principal y una tasa de transferencia demedio megaciclo por segundo.
+            </p>
+            <p>
+                <img class="univac1" src="Imagen/Univac1.jpg" title="Maquina UNIVAC diseñada por la empresa Remington Rand con ayuda de Presper Eckert y John Mauchly"> En la década de los años 50 del siglo XX la empresa Remington Rand diseño la 
+                <strong>Máquina UNIVAC</strong>(Universal Automatic Computer) considerado como el primer computador comercial desarrollado en Estados Unidos. Este computador estaba orientado a grandes empresas ya que tenia un costo elevado por emplear 
+                alrededor de 5.000 tuvos de vacío, lo que permitía un tamaño más reducido en comparación con las anteriores versiones. Esta máquina esta compuestapor una unidad de control conectada a una memoria, y esta memoria conectada a su vez con un 
+                dispositivo de entrada, otro de salidad y una unidad aritmética-lógica, la cual se encargaba de llevar a cabo las operaciones que van siendo almacenadas en la memoria recibidas por el dispositivo de entrada. Tanto el dispositivo de entrada 
+                como el de salidad estaba constituido por cintas magnéticas.
+            </p>
+        </article>
+        <article id="ArquiMultiproceso">
+            <h2>Arquitectura de Multiprocesamiento</h2>
+            <p>
+                Pasando a otro tema visto en la materia de Arquitetura de Computadoras es el entendimiendo de las Arquitecturas que tiene Multiprocesamiento o <strong>Multiprocesadores</strong> esto se refiere a cuando un computador cuenta con dos o más microprocesadores (CPUs) el 
+                cual le permite al computador ejecutar simultáneamente varios gilos pertenecientes a un mismo proceso o bien a procesos diferentes.<br>
+                Para que esto opere de manera correcta se necesita de un sistema operativo especialmente diseñado para ello ya que este computador con mas de un procesador puede tener diferentes Arquitenturas fuera:
+                <dt><strong>Arquitectura NUMA</strong></dt>
+                <dd>Donde cada procesador tiene acceso y control exclusivo a una parte de la memoria o</dd><br>
+                <dt><strong>Arquitectura SMP</strong></dt>
+                <dd>Donde todos los procesadores comparten toda la memoria.</dd>
+                <h1>Clasificación de Multiprocesadores</h1>
+                Con el paso del tiempo cada vez se fueron implementa más el uso de multiprocesadores en las CPU por lo cual Michale J. Flynn (un profesor de ingeniería electrónica y ciencias de la computación estadounidense) 
+                propuso la <em>taxonomía de Flynn</em>  donde era un tipo de clasificación que se reañoza según la forma de procesar los datos paralelamente, que en este caso resulta una clasificación basada en la cantidad
+                de datos e instrucciones que se manejan.
+                <br><br>
+                <dt><strong>Clasificación SISD (Simple Instruction, Simple Data)</strong></dt>
+                <dd>Cuya principal caracteristica es de que procesa una instrucción por cada ciclo de reloj muy similar a las <em>computadoras monoprocesadoras.</em></dd>.
+                <br><dt><strong>Clasificación SIMD (Simple Instruction, Multiplies Data)</strong></dt>
+                <dd>El cual como su nombre lo dice su principal caracteristica es que ejecuta un instrucción a la vez con multiples datos, ejemplo de ello son los <strong><em>procesadores vectoriales</em></strong><img class="procesoV" src="Imagen/procesador_vectorial.jpg" title="Procesador Vectorial"> 
+                los cuales son computadoras pensadas para aplicar un mismo algortmo numérico a una serie de datos matriciales, en especial en la simulación de sistemas físicos complejos (como el clima, 
+                explociones atómicas, reacciones químicas, etc.) y las <em><strong>extensiones MMX</em></strong> las cuales son instrucciones vectoriales que les permiten procesar flijos multimedia más eficientemente.</dd>.
+                <br><dt><strong>Clasificación MISD (Multiplies Instruction, Simple Data)</strong></dt>
+                <dd>Donde a diferencia de la anterior esta ejecutan varias instrucciones con un solo dato.</dd>
+                <br><dt><strong>Clasificación MIMD (Multiplies Instruction, Multiplies Data)</strong></dt>
+                <dd>Donde en este caso, se ejecutan diferentes intrucciones con diferentes datos, como ejemplo estan los<em><strong> Sistemas SMP</strong></em> que son conocidos por sus siglas en ingles <em>Simetric Multi-Processing</em> ya que tiene derechos similaresen cuanto al acceso a la memoria y puertos perifericos
+                    siendo ambos administradores ya que son varios procesadores los que comparte la misma memoria principal siendo formado por varios núcleos o varios circuitos integrados, los <strong><em>Clusters</em></strong> lo cual es un conjunto de computadoras independientes, conectadas en un red LAN o por
+                    un bus <img class="gpu" src="Imagen/gpus.jpg" title="GPUs"> de interconexión y que trabajan cooperativamente con un sistema de procedimiento paralelo o distribuido. Es clave en su funcionamiento contar con un sistema operativo y programas de aplicación capaces de distribuir el trabajo entre las computadoras 
+                    de la red y los <strong><em>GPUs</em></strong>
+                    por sus siglas en ingles <em>Graphics Processing Unit</em> el cual son sistemas  diseñados originalmente para el procesamiento de gráficos, con múltiples procesadores vectoriales sencillos compartiendo la misma memoría. Por la gran cantidad del núcleo con los que cuenta, logran un excelente desempeño al 
+                    ejecutar algoritmos que se adaptan al ser paralelizados.</dd>
+                <br>    
+            </p>
+        </article>
+        <article id="ArquitecturasSC">
+            <h2>Arquitetura CISC & RISC </h2>
+            <p>
+                Pasando otros tipos de arquitectura muy importante en la materia tenemos <strong><em>la Arquitectura CISC y la Arquitecura RISC</em></strong>; primero hablaremos de la Arquitectura CISC:
+                <h1>Arquitectura CISC</h1>
+                La Arquitectura CISC o <em>Arquitectura de Computadoras de Conjunto Complejo de Instrucciones</em> (por sus siglas en ingles <em>Complex Instruction Set Computer</em>) es un modelo de arquitectura, en donde los microprocesadores tienen un conjunto de instrucciones que se caracterizan por ser muy amplio y 
+                permitir operaciones completas entre operandos, situados en la memoria o en los registros internos.<br>
+                Se implementan instrucciones especiales que realizan funciones complejas, de manera que un programador puede encontrar con seguridad, una instrucción especial que realiza en hardware la función que el necesita lo que ayuda a reducir la dificultad de crear compiladores, el reducir el costo total del sistema
+                a si como reducir el costo de creación de software, ayuda también a mejorar la compactación de códigos y facilita la depuración de erros. La principal desvenja de este tipo de arquitectura es la dificultad del uso de paralelismo entre instrucciones por lo que CISC implementan un sistema que convierte dichas
+                instrucciones complejas en varias instrucciones.
+                <h1>Arquitectura RISC</h1>
+                La Arquitectura RISC o <em>Arquitectura de Computadoras con Conjunto Reducido de Instrucciones</em> (por sus siglas en ingles <em>Reduced Instruction Set Computer</em>) es un modelo de arquitectura el cual cuenta con instrucciones de tamaño fijo y presenta un reducido número de formatos, cuenta con instrucciones
+                de carga y almacenamiento las cuales solo con estás acceden a la memoria de datos con el objetivo de esta máquina de posibilitar las segmentación y el paralelismo en la ejecución de instrucciones y reducir los accesos a memoria lo cual ayuda a protagonizar la tendencia actual de contrucción de microprocesadores,
+                el trabajo es más rápido utilizar menos ciclos de reloj para ejecutar instrucciones y utilizan un sistema de direcciones no destructivas en la RAM. Este tipo de Arquitectura es un ejemplo de tecnologias como Apple, Motorola, Sun Microsystems, Millions Instruction Per Second, etc.
+            </p>
+        </article>
+        <article id="UnidadCentral">
+            <h2>Unidad Central de Procesamiento</h2>
+            <p>
+                En la materia de Arquitectura de Computadoras hay un tema que no se puede dejar pasar, y este es el tema de la <strong><em>Unidad Central de Procesamiento</em></strong> la cual es todo lo que compone el modelo del programador, conjunto de instrucciones, modos de direccionamientos, 
+                ciclos de instrucción, buses de interconexiones 
+                y dispositivos de entrada y salida. La Unidad Central del Procesamiento tiene dos acciones principales las cuales son:
+                <br><dt><strong>Acciones Directas</strong></dt>
+                <dd>Las cuales implican: Integrar un nuevo sistema de cómputo, reemplazaar un CPU dañado o actualizar un sistema de cómputo</dd> 
+                <br><dt><strong>Acciones Indirectas</strong></dt>
+                <dd>Las cuales implican: La compra de equipo de cómputo nuevo y construir un equipo de control-microcontrolador</dd> 
+                <br>
+                La Unidad Central de Procesamiento o <strong><em>CPU</em></strong> por sus siglas en ingles <em>Center Processing Unit</em> es el circuito de control principal de una computadora que realiza operaciónes aritméticas, lógicas, de control, y de entrada y salida, donde 
+                tambien se encuentra el <strong><em>Chiplet</em></strong> que es un <em>circuito integrado</em> que contiene un subconjunto de los bloques funcionales que generalmente son necesarios para un sistema en <strong><em>Chip</em></strong> (pequeño bloque de material semiconductor en el 
+                que se coloca un <em>circuito integrado</em> 
+                funcional especifico). Pero, ¿que son esos <strong><em>"circuitos integrados"</em></strong>?, pues son conjuntos de circuitos electrónicos diseñados en un área pequeña de materiales semiconductores.
+            </p>
+        </article>
+        <article id="UnidadAritmetica">
+            <h2>Unidad Aritmetica-Logica(ALU)</h2>
+            <p>
+                La Unidad Aritmetica es un circuito dígital que realiza como su nombre lo indica las operaciones aritméticas y lógicas entre los datos de un circuito; suma, resta, divide y multiplica, así como establece comparaciones                                                                                                                      
+                lógicas a través de los condicionales lógicos "si", "no" y , "o". Donde todos los microprocesadores incluyen al menos una ALU donde andemás cuenta con una serie de registros para
+                almacenar los datos, y bits de información sobre los resultados.<br>
+                De forma simple el ALU es un operador, es decir, sólo realiza operaciones no tiene la posibilidar de tomar decisiones y requiere de un mecanismo de control que le permita saber el tipo de operación a realizar.<br>
+                Estas operaciones son:
+                <li>Suma aritmética</li>
+                <li>Resta aritmética</li>
+                <li>Operaciones lógicas</li>
+                <li>Desplazamiento o rotación</li>
+                <li>Transferencia</li><br> 
+                Y las partes de una Unidad Aritmetica-Logica son:
+                <li>Sumador/restador</li>
+                <li>Un acumulador y un registroauxiliar</li>
+                <li>Operadores logicos</li>
+                <li>Un registro de salida</li>
+                <li>Señales de control</li>
+                <li>Registro de banderas</li>  
+            </p>
+        </article>
+        <article id="UnidadControl">
+            <h2>Unidad de control</h2>
+            Aparte de la Unidad Aritmética-Logical otra unidad sumamente importante en una Arquitectura de Computadoras es la <strong><em>Unidad de Control</em></strong> esta es la parte "inteligente" del sistema microprocesador 
+            de los CPU's tambien llamado como decodificación de la instrucción siendo el centro lógico de la computadora ya que los recursos de esta son administrados en la unidad de control, encargandose de dirigir el flujo de datos.
+            <br> El conjunto de instrucciones que conforman cada instrucción, vienen grabadas de fábrica en el chip del CPU con memoria tipo ROM y que por lo general no es accesible al programador denominado microprogramado.
+            <br> Las principales funciones de este son:
+            <br><li>Decodificación de las instrucciones</li>
+            <li>Sincronización de las tareas</li>
+            <li>Administración e los buses internos de comunicación del microprocesador</li>
+            <li>Manejo de las lineas de intercambio con el exterior (permiten la interaccion de CPU en memoria
+                principal y los perifericos)</li>
+            <li>Indicación a la ALU sobre las operaciones a realizar.</li>
+        </article>
+        <br>
+        <article id="registros">
+            <h2>Registros del Procesador</h2>
+            Los <strong><em>Registros del Procesador</em></strong> cumplen la función principal de almacenar los valores de cada uno de los datos, comandos, instrucciones o estados binarios que son los que ordenan qué dato debe procesarse, 
+            así como la forma en la que se debe realizar.<br>
+            Además cada procesador tiene varias asignaciones o tareas que debe de realizr para el manejo de la información esta recibida generalmente en código. Se puede decir que el procesador traduce esos datos para
+            que nosotros, los usuarios, los entendamos. Sin embargo no cualquier <em>Registro</em> (una memoria de velocidad alta y con poca capacidad donde contiene una instrucción, una dirección
+            de almacenamiento o cualquier tipo de dato) puede almacenar cualquier cosa, para eso existen diferentes tipos de registros:
+            <br>
+            <br><dt>Registros de Datos de Memoria (MDR)</dt>
+            <dd>Este guardan valores de datos numéricos (caracteres o pequeñas ordenes)</dd>
+            <br><dt>Registros de Direcciones</dt>
+            <dd>Estos guardan direcciones que son usadas para acceder a la memoria principal (RAM)</dd>
+            <dd><br><dt>Registros de Proposito General (GPRs)</dt>
+            <dd>Son registros que sirven para almacenar direcciones o datos generales los cuales no tiene una función específica.</dd></dd>
+            <br><dt>Registros de Proposito Especifico (SPRs)</dt>
+            <dd>Estos registros guardan datos del estado del sistema, como puede ser el registro de estado o el instruction pointer.</dd>
+            <br><dt>Registros de Estados</dt>
+            <dd>Sirven para guardar valores reales cuya función es determinar cuándo una instruccion debe ejecutarse o no. Tambien conocido como CCR (Condition Code Register)</dd>
+            <br><dt>Registros de Bandera</dt>
+            <dd>Se encuentra en el procesador Intel que contiene el estado actual del procesador</dd>
+            <br><dt>Registros de Coma Flotante</dt>
+            <dd>Estos registros guardan en forma de formula, numeros reales de distintos tamaños que sirve para realizar operaciones aritmeticas en muchísimas arquitecturas)</dd>
+            <br><dt>Registros Constantes</dt>
+            <dd>Su cometido es guardar valores de sólo lectura como son el 0, 1 o pi.</dd>    
+        </article>
+        <br>
+        <article id="memoria">
+            <h2>Memoria</h2>
+            No podemos hablar de registros y sin hablar de la <strong><em>Memoria</em></strong>, esta es un dispositivo que puede mantenerse en por lo menos dos estados estables 
+            por un cieto periodo de tiempo, siendo estos estados estables represanterse como un bit. Una memoria completa cuenta con
+            varias celdas básicas y circuitos asociados para poder leer y escribir en dichas celdas. Al igual que los registros existen diferentes tipos de memorias, sin embargo 
+            solo hablaremos en especifico de dos de ellas:
+            <br><br><dt><strong>Memoria Semiconductora</strong></dt>
+            <dd>Esta utiliza en su arquitectura circuitos integrados basados en semiconductores para almacenar informacion.
+                El chip de esta memoria puede contener millones de minúsculos transistore o condensadores.
+                Esta memoria tambien existe de forma volatil y no volatil pero en computadoras modernas es comun encontrar
+                este tipo de memoria, volátil y dinamica conocida como RAM (Random Access Memory).
+                Con el tiempo se a utilizado más este tipo de memoria no volátil de nombre "flash" utilizada como
+                memorias secundarias en dispositivos de electronica avanzada y computadoras.</dd>
+            <br><dt><strong>Memoria Caché</strong></dt>
+            <dd>Es un búfer especial de memoria que poseen las computadoras, que funciona de manera similar a la memoria
+                principal, pero es de menor tamaño y de acceso más rápido. Es usada por el procesador para reducir el 
+                tiempo de acceso a datos ubicados en la memoria principal que se utilizan con más frecuencia.
+                <br>Esta memoria se sitúa entre la unidad central de procesamientos (CPU) y la memoria de acceso aleatorio (RAM)
+                para acelerar el intercambio de datos.</dd><img class="gpu" src="Imagen/semi.jpg" title="Memoria de una computadora">
+        </article>
+        <br>
+        <a href="https://www.youtube.com/watch?v=GHJn6YSJTc4&list=FLv4jACHl2qfq2BNOuONgP8w&index=11&t=47s" style="font-size: 20px; text-align: center;">Video explicativo de la unidad 1</a>
+        <br>
+        <article id="Unidad2" style="font-size: 20px;">
+            <h3>Unidad 2 Procesadores Intel</h3>
+            <iframe src="https://onedrive.live.com/embed?cid=ABBA324163CCBFA5&amp;resid=ABBA324163CCBFA5%21572&amp;authkey=AOfWtohNrEg9ixk&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </article>
+        <br>
+        <article id="Unidad3" style="font-size: 20px;">
+            <h3>Unidad 3 Procesadores AMD</h3>
+            <iframe src="https://onedrive.live.com/embed?cid=ABBA324163CCBFA5&amp;resid=ABBA324163CCBFA5%21575&amp;authkey=AGkFqD3_56EROcc&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </article>
+        <br>
+        <article id="Unidad4" style="font-size: 20px;">
+            <h3>Unidad 4 Procedimiento Paralelo</h3>
+            <iframe src="https://onedrive.live.com/embed?cid=ABBA324163CCBFA5&amp;resid=ABBA324163CCBFA5%21586&amp;authkey=ABMioVoE8g6ecZ8&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </article>
+        <br>
+        <article>
+            <h1> Fuentes de información</h1>
+            <a href="https://www.lifeder.com/pascalina/">https://www.lifeder.com/pascalina/</a><br>
+            <a href="https://proyectoidis.org/maquina-diferencial-maquina-analitica/">https://proyectoidis.org/maquina-diferencial-maquina-analitica/</a><br> 
+            <a href="https://hipertextual.com/2011/07/la-maquina-enigma-el-sistema-de-cifrado-que-puso-en-jaque-a-europa">https://hipertextual.com/2011/07/la-maquina-enigma-el-sistema-de-cifrado-que-puso-en-jaque-a-europa</a><br>
+            <a href="https://histinf.blogs.upv.es/2011/12/19/la-maquina-colossus/">https://histinf.blogs.upv.es/2011/12/19/la-maquina-colossus/</a><br>
+            <a href="https://lapasiondepensar.wordpress.com/2018/07/05/eniac-primera-generacion-ordenadores/">https://lapasiondepensar.wordpress.com/2018/07/05/eniac-primera-generacion-ordenadores/</a><br>
+            <a href="https://lapasiondepensar.wordpress.com/2018/07/09/edvac/">https://lapasiondepensar.wordpress.com/2018/07/09/edvac/</a><br>
+            <a href="http://www.tecnotopia.com.mx/computadoras/edsac.htm">http://www.tecnotopia.com.mx/computadoras/edsac.htm</a><br>
+            <a href="http://museo.inf.upv.es/es/univac/">http://museo.inf.upv.es/es/univac/</a><br>
+            <a href="http://arqcom14.blogspot.com/2014/05/clasificacion-de-flynn.html#:~:text=La%20clasificacion%20de%20flynn%20hace,Multiples%20instrucciones%2C%20multiples%20datos).">http://arqcom14.blogspot.com/2014/05/clasificacion-de-flynn.html#:~:text=La%20clasificacion%20de%20flynn%20hace,Multiples%20instrucciones%2C%20multiples%20datos).</a>
+        </article>    
+    </section>
+</body> 
+<br><br>
+<footer id="PiedePagina">
+   Instituto Tecnologico de Saltillo<br>
+   Carrera de Ingenieria en Sistemas Computacionales<br>
+   Autor: Angel Eduardo Rios Aguirre<br>
+   No. Control: 18052344<br>
+</footer>   
+</html>
